@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        
+        <input class='border' type='text'>
+
+
+
+    <div class='letters'>
+
+
+    </div>
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script type="text/javascript">
+            var letters = Array();
+            letters['a'] = "<div class='letter a'><div class='block1'></div><div class='block2'></div></div>";
+            letters['b'] = "<div class='letter b'><div class='block1'></div><div class='block2'></div></div>";
+            letters['c'] = "<div class='letter c'><div class='block1'></div><div class='block2'></div></div>";
+            letters['d'] = "<div class='letter d'><div class='block1'></div><div class='block2'></div></div>";
+            letters['e'] = "<div class='letter e'><div class='block1'></div><div class='block2'></div></div>";
+            letters['f'] = "<div class='letter f'><div class='block1'></div><div class='block2'></div></div>";
+            letters['g'] = "<div class='letter g'><div class='block1'></div><div class='block2'></div></div>";
+            letters['h'] = "<div class='letter h'><div class='block1'></div><div class='block2'></div></div>";
+            letters['i'] = "<div class='letter i'><div class='block1'></div><div class='block2'></div></div>";
+            letters['j'] = "<div class='letter j'><div class='block1'></div><div class='block2'></div></div>";
+            letters['k'] = "<div class='letter k'><div class='block1'></div><div class='block2'></div></div>";
+            letters['l'] = "<div class='letter l'><div class='block1'></div><div class='block2'></div></div>";
+            letters['m'] = "<div class='letter m'><div class='block1'></div><div class='block2'></div></div>";
+            letters['n'] = "<div class='letter n'><div class='block1'></div><div class='block2'></div></div>";
+            letters['o'] = "<div class='letter o'><div class='block1'></div><div class='block2'></div></div>";
+            letters['p'] = "<div class='letter p'><div class='block1'></div><div class='block2'></div></div>";
+            letters['q'] = "<div class='letter q'><div class='block1'></div><div class='block2'></div></div>";
+            letters['r'] = "<div class='letter r'><div class='block1'></div><div class='block2'></div></div>";
+            letters['s'] = "<div class='letter s'><div class='block1'></div><div class='block2'></div></div>";
+            letters['t'] = "<div class='letter t'><div class='block1'></div><div class='block2'></div></div>";
+            letters['u'] = "<div class='letter u'><div class='block1'></div><div class='block2'></div></div>";
+            letters['v'] = "<div class='letter v'><div class='block1'></div><div class='block2'></div></div>";
+            letters['w'] = "<div class='letter w'><div class='block1'></div><div class='block2'></div></div>";
+            letters['x'] = "<div class='letter x'><div class='block1'></div><div class='block2'></div></div>";
+            letters['y'] = "<div class='letter y'><div class='block1'></div><div class='block2'></div></div>";
+            letters['z'] = "<div class='letter z'><div class='block1'></div><div class='block2'></div></div>";
+            $('.border').keyup(function(){
+                var $finalLetters = null;
+                var val = $('.border').val().split('');
+                for(var x = 0; x < val.length; x++){
+                    var character = val[x].toLowerCase();
+                    if(letters[character] != null || letters[character] != undefined){
+                        $finalLetters += letters[character];
+                    }
+                }
+                $('.letters').html($finalLetters);
+            })
+        </script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>
