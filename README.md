@@ -1,4 +1,4 @@
-# [Month of Code Day 1](http://maxheckel.me/monthOfCode/day2)
+# [Month of Code Day 2](http://maxheckel.me/monthOfCode/day2)
 
 ## Theme -- Hello World
 
